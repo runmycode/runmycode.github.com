@@ -50,6 +50,6 @@ publish:
 
 github: publish
 	ghp-import $(OUTPUTDIR)
-	git push origin gh-pages
+	git push origin master
 
 .PHONY: html help clean regenerate serve devserver publish github
