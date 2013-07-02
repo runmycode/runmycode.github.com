@@ -1,0 +1,12 @@
+*.py[cod]
+
+# virtualenv
+venv
+
+#pelican
+pelican.pid
+srv.pid
+output
+
+# Installer logs
+pip-log.txt
