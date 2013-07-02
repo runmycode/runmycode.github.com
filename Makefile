@@ -49,7 +49,7 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 github: publish
-	ghp-import $(OUTPUTDIR)
+	ghp-import $(OUTPUTDIR) -m 'pelican generation' -b master -p
 	git push origin master
 
 .PHONY: html help clean regenerate serve devserver publish github
